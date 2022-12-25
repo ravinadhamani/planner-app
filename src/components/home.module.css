@@ -1,0 +1,29 @@
+.navbar{
+    background-color: rgb(19, 161, 227);
+    display: flex;
+}
+.plannerBtn{
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 85px;
+    width: 380px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgb(145, 206, 234);
+    cursor: pointer;
+}
+.notesBtn{
+    margin-left: 15px;
+    margin-top: 30px;
+    height: 85px;
+    width: 270px;
+    border-radius: 50px;
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    background-color: rgb(145, 206, 234);
+    cursor: pointer;
+}
