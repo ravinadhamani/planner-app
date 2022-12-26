@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import { useNavigate } from 'react-router';
 import CreateTask from '../modals/CreateTask'
 import Card from './Card';
 import Home from './Home';
@@ -16,12 +17,13 @@ const Notes = () => {
         }
     }, [])
 
-
+    const navigate = useNavigate();
     const deleteTask = (index) => {
         let tempList = taskList
         tempList.splice(index, 1)
         localStorage.setItem("taskList", JSON.stringify(tempList))
         setTaskList(tempList)
+        navigate("/notes");
         //window.location.reload()
     }
 
@@ -30,7 +32,8 @@ const Notes = () => {
         tempList[index] = obj
         localStorage.setItem("taskList", JSON.stringify(tempList))
         setTaskList(tempList)
-        //window.location.reload()
+       // navigate("/notes")
+        window.location.reload(true)
     }
 
     const toggle = () => {
