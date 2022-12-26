@@ -22,7 +22,7 @@ const Notes = () => {
         tempList.splice(index, 1)
         localStorage.setItem("taskList", JSON.stringify(tempList))
         setTaskList(tempList)
-        window.location.reload()
+        //window.location.reload()
     }
 
     const updateListArray = (obj, index) => {
@@ -30,7 +30,7 @@ const Notes = () => {
         tempList[index] = obj
         localStorage.setItem("taskList", JSON.stringify(tempList))
         setTaskList(tempList)
-        window.location.reload()
+        //window.location.reload()
     }
 
     const toggle = () => {
